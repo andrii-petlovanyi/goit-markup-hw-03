@@ -79,18 +79,30 @@ body {
   margin: -1px;
 }
 
-.section {
+.container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 /* Site navigation / Header*/
-.header-section {
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.header-box .logo {
+  margin-right: 93px;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 15px;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -163,16 +175,16 @@ body {
 .main-hero {
   color: var(--second-text-color);
   background-color: var(--second-block-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero-section {
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 696px;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 /*  Button */
@@ -208,7 +220,10 @@ body {
 }
 
 /*------MAIN FEATURES------*/
-
+.main-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .main-features .title-card {
   font-weight: 700;
   font-size: 14px;
@@ -219,7 +234,6 @@ body {
 
 .features-list {
   display: flex;
-  padding: 94px 15px;
 }
 
 .main-features .title-card {
@@ -265,9 +279,6 @@ body {
 /*-----OUR TEAM----*/
 .main-team {
   background-color: var(--accent-block-color);
-}
-
-.section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -293,12 +304,11 @@ body {
 }
 
 .team-list .title-card {
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.team-list .label {
-  margin-top: 10px;
-  margin-bottom: 30px;
+.team-list .card-box {
+  padding: 30px 20px;
 }
 
 .main-team .title-card {
@@ -366,17 +376,18 @@ body {
 
 .main-portfolio {
   background-color: var(--second-text-color);
-}
-
-.section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.portfolio-container {
   align-items: center;
 }
 
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter .btn-li:not(:last-child) {
@@ -385,10 +396,7 @@ body {
 
 .filter .btn {
   padding: 6px 22px;
-  margin-bottom: 50px;
   background: var(--accent-block-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
   font-family: inherit;
@@ -403,6 +411,8 @@ body {
 .main-portfolio .btn:focus {
   background-color: var(--accent-text-color);
   color: var(--second-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
