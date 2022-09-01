@@ -89,12 +89,12 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-box {
+.site-nav {
   display: flex;
   align-items: center;
 }
 
-.header-box .logo {
+.site-nav .logo {
   margin-right: 93px;
 }
 
@@ -121,15 +121,14 @@ body {
   display: flex;
 }
 
-.nav-list .link {
-  padding: 8px 0;
-}
-
 .nav-list .item:not(:last-child) {
   margin-right: 50px;
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
